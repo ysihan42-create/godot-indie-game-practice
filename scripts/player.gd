@@ -11,6 +11,8 @@ const ATTACK_COOLDOWN = 0.4
 @onready var attack_area: Area2D = $AttackArea
 @onready var attack_visual: Polygon2D = $AttackArea/AttackVisual
 @onready var attack_timer: Timer = $AttackTimer
+@onready var drop_ray: RayCast2D = $DropRay
+@onready var drop_timer: Timer = $DropTimer
 @onready var camera = get_node_or_null("Camera2D")
 
 var has_double_jump := false
@@ -32,6 +34,7 @@ var attack_boost_time := 0.0
 var facing := 1
 var base_attack_visual_scale := Vector2.ONE
 var base_attack_visual_rotation := 0.0
+var drop_platform = null
 
 
 func _ready() -> void:
@@ -43,6 +46,7 @@ func _ready() -> void:
 	attack_area.monitoring = false
 	attack_visual.visible = false
 	attack_timer.timeout.connect(_on_attack_timer_timeout)
+	drop_timer.timeout.connect(_on_drop_timer_timeout)
 	attack_area.area_entered.connect(_on_attack_area_area_entered)
 
 
@@ -109,6 +113,13 @@ func _physics_process(delta: float) -> void:
 	# Attack.
 	if Input.is_action_just_pressed("attack") and has_attack and attack_cooldown_time <= 0.0:
 		_do_attack()
+
+	if Input.is_action_just_pressed("move_down") and drop_ray.is_colliding():
+		var collider := drop_ray.get_collider()
+		if collider is AnimatableBody2D:
+			drop_platform = collider
+			drop_platform.collision_layer = 0
+			drop_timer.start()
 
 	# Play animations
 	if is_on_floor():
@@ -205,6 +216,12 @@ func _on_attack_area_area_entered(area: Area2D) -> void:
 	if area.is_in_group("enemy_hurtbox") and area.get_parent().has_method("hit"):
 		_shake_camera(4.0, 0.12)
 		area.get_parent().hit()
+
+
+func _on_drop_timer_timeout() -> void:
+	if drop_platform:
+		drop_platform.collision_layer = 1
+		drop_platform = null
 
 
 func _shake_camera(strength: float, duration: float) -> void:

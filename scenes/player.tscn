@@ -212,3 +212,12 @@ polygon = PackedVector2Array(27, -7.312499, 30, -5.062499, 31, -3.3749995, 30, -
 [node name="AttackTimer" type="Timer" parent="." unique_id=90000103]
 wait_time = 0.16
 one_shot = true
+
+[node name="DropRay" type="RayCast2D" parent="." unique_id=90000104]
+position = Vector2(0, -2)
+target_position = Vector2(0, 16)
+collision_mask = 1
+
+[node name="DropTimer" type="Timer" parent="." unique_id=90000105]
+wait_time = 0.25
+one_shot = true
