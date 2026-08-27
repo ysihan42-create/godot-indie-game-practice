@@ -221,3 +221,13 @@ collision_mask = 1
 [node name="DropTimer" type="Timer" parent="." unique_id=90000105]
 wait_time = 0.25
 one_shot = true
+
+[node name="DropRayLeft" type="RayCast2D" parent="." unique_id=90000106]
+position = Vector2(-5, -2)
+target_position = Vector2(0, 16)
+collision_mask = 1
+
+[node name="DropRayRight" type="RayCast2D" parent="." unique_id=90000107]
+position = Vector2(5, -2)
+target_position = Vector2(0, 16)
+collision_mask = 1

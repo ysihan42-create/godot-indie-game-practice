@@ -12,8 +12,161 @@
 [ext_resource type="FontFile" uid="uid://jgv88f60q8tg" path="res://assets/fonts/PixelOperator8.ttf" id="8_0tnpc"]
 [ext_resource type="PackedScene" uid="uid://bwgm8nk20nuhg" path="res://scenes/fruit_item.tscn" id="9_fruit"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_bridge"]
-size = Vector2(16, 8)
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_0"]
+points = PackedVector2Array(-8, -8, 8, -6.142296, 8, -0.2456913, -8, -2.3095036)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_1"]
+points = PackedVector2Array(-8, -6.0440197, 8, -6.044019, 8, 1.0319061, -8, 1.0319061)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_2"]
+points = PackedVector2Array(-8, -5.9457417, 8, -8, 8, -2.0146732, -8, -0.2456913)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_3"]
+points = PackedVector2Array(-8, -8, 8, -6.142296, 8, -0.2456913, -8, -2.3095036)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_4"]
+points = PackedVector2Array(-8, -6.0440197, 8, -6.044019, 8, 1.0319061, -8, 1.0319061)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_5"]
+points = PackedVector2Array(-8, -6.0440197, 8, -6.044019, 8, 1.0319061, -8, 1.0319061)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_6"]
+points = PackedVector2Array(-8, -5.9457417, 8, -8, 8, -2.0146732, -8, -0.2456913)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_7"]
+points = PackedVector2Array(-8, -8, 8, -6.142296, 8, -0.2456913, -8, -2.3095036)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_8"]
+points = PackedVector2Array(-8, -6.0440197, 8, -6.044019, 8, 1.0319061, -8, 1.0319061)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_9"]
+points = PackedVector2Array(-8, -6.0440197, 8, -6.044019, 8, 1.0319061, -8, 1.0319061)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_10"]
+points = PackedVector2Array(-8, -6.0440197, 8, -6.044019, 8, 1.0319061, -8, 1.0319061)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_11"]
+points = PackedVector2Array(-8, -6.0440197, 8, -6.044019, 8, 1.0319061, -8, 1.0319061)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_12"]
+points = PackedVector2Array(-8, -6.0440197, 8, -6.044019, 8, 1.0319061, -8, 1.0319061)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_13"]
+points = PackedVector2Array(-8, -6.0440197, 8, -6.044019, 8, 1.0319061, -8, 1.0319061)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_14"]
+points = PackedVector2Array(-8, -6.0440197, 8, -6.044019, 8, 1.0319061, -8, 1.0319061)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_15"]
+points = PackedVector2Array(-8, -6.0440197, 8, -6.044019, 8, 1.0319061, -8, 1.0319061)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_16"]
+points = PackedVector2Array(-8, -6.0440197, 8, -6.044019, 8, 1.0319061, -8, 1.0319061)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_17"]
+points = PackedVector2Array(-8, -6.0440197, 8, -6.044019, 8, 1.0319061, -8, 1.0319061)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_18"]
+points = PackedVector2Array(-8, -6.0440197, 8, -6.044019, 8, 1.0319061, -8, 1.0319061)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_19"]
+points = PackedVector2Array(-8, -6.0440197, 8, -6.044019, 8, 1.0319061, -8, 1.0319061)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_20"]
+points = PackedVector2Array(-8, -6.0440197, 8, -6.044019, 8, 1.0319061, -8, 1.0319061)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_21"]
+points = PackedVector2Array(-8, -6.0440197, 8, -6.044019, 8, 1.0319061, -8, 1.0319061)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_22"]
+points = PackedVector2Array(-8, -6.0440197, 8, -6.044019, 8, 1.0319061, -8, 1.0319061)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_23"]
+points = PackedVector2Array(-8, -6.0440197, 8, -6.044019, 8, 1.0319061, -8, 1.0319061)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_24"]
+points = PackedVector2Array(-8, -6.0440197, 8, -6.044019, 8, 1.0319061, -8, 1.0319061)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_25"]
+points = PackedVector2Array(-8, -6.0440197, 8, -6.044019, 8, 1.0319061, -8, 1.0319061)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_26"]
+points = PackedVector2Array(-8, -6.0440197, 8, -6.044019, 8, 1.0319061, -8, 1.0319061)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_27"]
+points = PackedVector2Array(-8, -6.0440197, 8, -6.044019, 8, 1.0319061, -8, 1.0319061)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_28"]
+points = PackedVector2Array(-8, -6.0440197, 8, -6.044019, 8, 1.0319061, -8, 1.0319061)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_29"]
+points = PackedVector2Array(-8, -6.0440197, 8, -6.044019, 8, 1.0319061, -8, 1.0319061)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_30"]
+points = PackedVector2Array(-8, -6.0440197, 8, -6.044019, 8, 1.0319061, -8, 1.0319061)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_31"]
+points = PackedVector2Array(-8, -6.0440197, 8, -6.044019, 8, 1.0319061, -8, 1.0319061)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_32"]
+points = PackedVector2Array(-8, -6.0440197, 8, -6.044019, 8, 1.0319061, -8, 1.0319061)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_33"]
+points = PackedVector2Array(-8, -6.0440197, 8, -6.044019, 8, 1.0319061, -8, 1.0319061)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_34"]
+points = PackedVector2Array(-8, -6.0440197, 8, -6.044019, 8, 1.0319061, -8, 1.0319061)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_35"]
+points = PackedVector2Array(-8, -6.0440197, 8, -6.044019, 8, 1.0319061, -8, 1.0319061)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_36"]
+points = PackedVector2Array(-8, -6.0440197, 8, -6.044019, 8, 1.0319061, -8, 1.0319061)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_37"]
+points = PackedVector2Array(-8, -6.0440197, 8, -6.044019, 8, 1.0319061, -8, 1.0319061)
+
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_bridge_38"]
+points = PackedVector2Array(-8, -5.9457417, 8, -8, 8, -2.0146732, -8, -0.2456913)
+
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("2_yqjtg")
@@ -678,9 +831,8 @@ theme_override_font_sizes/font_size = 40
 text = "You die"
 horizontal_alignment = 1
 vertical_alignment = 1
-
 [node name="Bridge_0" type="AnimatableBody2D" parent="." unique_id=90000400]
-position = Vector2(120, 88)
+position = Vector2(120.0, 88.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_0" unique_id=90000401]
 texture = ExtResource("2_yqjtg")
@@ -688,13 +840,11 @@ region_enabled = true
 region_rect = Rect2(144, 0, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_0" unique_id=90000402]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_0")
 one_way_collision = true
 
-
 [node name="Bridge_1" type="AnimatableBody2D" parent="." unique_id=90000403]
-position = Vector2(136, 88)
+position = Vector2(136.0, 88.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_1" unique_id=90000404]
 texture = ExtResource("2_yqjtg")
@@ -702,13 +852,11 @@ region_enabled = true
 region_rect = Rect2(160, 0, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_1" unique_id=90000405]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_1")
 one_way_collision = true
 
-
 [node name="Bridge_2" type="AnimatableBody2D" parent="." unique_id=90000406]
-position = Vector2(152, 88)
+position = Vector2(152.0, 88.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_2" unique_id=90000407]
 texture = ExtResource("2_yqjtg")
@@ -716,13 +864,11 @@ region_enabled = true
 region_rect = Rect2(176, 0, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_2" unique_id=90000408]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_2")
 one_way_collision = true
 
-
 [node name="Bridge_3" type="AnimatableBody2D" parent="." unique_id=90000409]
-position = Vector2(632, 104)
+position = Vector2(632.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_3" unique_id=90000410]
 texture = ExtResource("2_yqjtg")
@@ -730,13 +876,11 @@ region_enabled = true
 region_rect = Rect2(144, 32, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_3" unique_id=90000411]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_3")
 one_way_collision = true
 
-
 [node name="Bridge_4" type="AnimatableBody2D" parent="." unique_id=90000412]
-position = Vector2(648, 104)
+position = Vector2(648.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_4" unique_id=90000413]
 texture = ExtResource("2_yqjtg")
@@ -744,13 +888,11 @@ region_enabled = true
 region_rect = Rect2(160, 32, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_4" unique_id=90000414]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_4")
 one_way_collision = true
 
-
 [node name="Bridge_5" type="AnimatableBody2D" parent="." unique_id=90000415]
-position = Vector2(664, 104)
+position = Vector2(664.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_5" unique_id=90000416]
 texture = ExtResource("2_yqjtg")
@@ -758,13 +900,11 @@ region_enabled = true
 region_rect = Rect2(160, 32, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_5" unique_id=90000417]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_5")
 one_way_collision = true
 
-
 [node name="Bridge_6" type="AnimatableBody2D" parent="." unique_id=90000418]
-position = Vector2(680, 104)
+position = Vector2(680.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_6" unique_id=90000419]
 texture = ExtResource("2_yqjtg")
@@ -772,13 +912,11 @@ region_enabled = true
 region_rect = Rect2(176, 32, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_6" unique_id=90000420]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_6")
 one_way_collision = true
 
-
 [node name="Bridge_7" type="AnimatableBody2D" parent="." unique_id=90000421]
-position = Vector2(1192, 104)
+position = Vector2(1192.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_7" unique_id=90000422]
 texture = ExtResource("2_yqjtg")
@@ -786,13 +924,11 @@ region_enabled = true
 region_rect = Rect2(144, 16, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_7" unique_id=90000423]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_7")
 one_way_collision = true
 
-
 [node name="Bridge_8" type="AnimatableBody2D" parent="." unique_id=90000424]
-position = Vector2(1208, 104)
+position = Vector2(1208.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_8" unique_id=90000425]
 texture = ExtResource("2_yqjtg")
@@ -800,13 +936,11 @@ region_enabled = true
 region_rect = Rect2(160, 16, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_8" unique_id=90000426]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_8")
 one_way_collision = true
 
-
 [node name="Bridge_9" type="AnimatableBody2D" parent="." unique_id=90000427]
-position = Vector2(1224, 104)
+position = Vector2(1224.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_9" unique_id=90000428]
 texture = ExtResource("2_yqjtg")
@@ -814,13 +948,11 @@ region_enabled = true
 region_rect = Rect2(160, 16, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_9" unique_id=90000429]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_9")
 one_way_collision = true
 
-
 [node name="Bridge_10" type="AnimatableBody2D" parent="." unique_id=90000430]
-position = Vector2(1240, 104)
+position = Vector2(1240.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_10" unique_id=90000431]
 texture = ExtResource("2_yqjtg")
@@ -828,13 +960,11 @@ region_enabled = true
 region_rect = Rect2(160, 16, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_10" unique_id=90000432]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_10")
 one_way_collision = true
 
-
 [node name="Bridge_11" type="AnimatableBody2D" parent="." unique_id=90000433]
-position = Vector2(1256, 104)
+position = Vector2(1256.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_11" unique_id=90000434]
 texture = ExtResource("2_yqjtg")
@@ -842,13 +972,11 @@ region_enabled = true
 region_rect = Rect2(160, 16, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_11" unique_id=90000435]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_11")
 one_way_collision = true
 
-
 [node name="Bridge_12" type="AnimatableBody2D" parent="." unique_id=90000436]
-position = Vector2(1272, 104)
+position = Vector2(1272.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_12" unique_id=90000437]
 texture = ExtResource("2_yqjtg")
@@ -856,13 +984,11 @@ region_enabled = true
 region_rect = Rect2(160, 16, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_12" unique_id=90000438]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_12")
 one_way_collision = true
 
-
 [node name="Bridge_13" type="AnimatableBody2D" parent="." unique_id=90000439]
-position = Vector2(1288, 104)
+position = Vector2(1288.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_13" unique_id=90000440]
 texture = ExtResource("2_yqjtg")
@@ -870,13 +996,11 @@ region_enabled = true
 region_rect = Rect2(160, 16, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_13" unique_id=90000441]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_13")
 one_way_collision = true
 
-
 [node name="Bridge_14" type="AnimatableBody2D" parent="." unique_id=90000442]
-position = Vector2(1304, 104)
+position = Vector2(1304.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_14" unique_id=90000443]
 texture = ExtResource("2_yqjtg")
@@ -884,13 +1008,11 @@ region_enabled = true
 region_rect = Rect2(160, 16, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_14" unique_id=90000444]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_14")
 one_way_collision = true
 
-
 [node name="Bridge_15" type="AnimatableBody2D" parent="." unique_id=90000445]
-position = Vector2(1320, 104)
+position = Vector2(1320.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_15" unique_id=90000446]
 texture = ExtResource("2_yqjtg")
@@ -898,13 +1020,11 @@ region_enabled = true
 region_rect = Rect2(160, 16, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_15" unique_id=90000447]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_15")
 one_way_collision = true
 
-
 [node name="Bridge_16" type="AnimatableBody2D" parent="." unique_id=90000448]
-position = Vector2(1336, 104)
+position = Vector2(1336.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_16" unique_id=90000449]
 texture = ExtResource("2_yqjtg")
@@ -912,13 +1032,11 @@ region_enabled = true
 region_rect = Rect2(160, 16, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_16" unique_id=90000450]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_16")
 one_way_collision = true
 
-
 [node name="Bridge_17" type="AnimatableBody2D" parent="." unique_id=90000451]
-position = Vector2(1352, 104)
+position = Vector2(1352.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_17" unique_id=90000452]
 texture = ExtResource("2_yqjtg")
@@ -926,13 +1044,11 @@ region_enabled = true
 region_rect = Rect2(160, 16, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_17" unique_id=90000453]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_17")
 one_way_collision = true
 
-
 [node name="Bridge_18" type="AnimatableBody2D" parent="." unique_id=90000454]
-position = Vector2(1368, 104)
+position = Vector2(1368.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_18" unique_id=90000455]
 texture = ExtResource("2_yqjtg")
@@ -940,13 +1056,11 @@ region_enabled = true
 region_rect = Rect2(160, 16, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_18" unique_id=90000456]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_18")
 one_way_collision = true
 
-
 [node name="Bridge_19" type="AnimatableBody2D" parent="." unique_id=90000457]
-position = Vector2(1384, 104)
+position = Vector2(1384.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_19" unique_id=90000458]
 texture = ExtResource("2_yqjtg")
@@ -954,13 +1068,11 @@ region_enabled = true
 region_rect = Rect2(160, 16, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_19" unique_id=90000459]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_19")
 one_way_collision = true
 
-
 [node name="Bridge_20" type="AnimatableBody2D" parent="." unique_id=90000460]
-position = Vector2(1400, 104)
+position = Vector2(1400.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_20" unique_id=90000461]
 texture = ExtResource("2_yqjtg")
@@ -968,13 +1080,11 @@ region_enabled = true
 region_rect = Rect2(160, 16, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_20" unique_id=90000462]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_20")
 one_way_collision = true
 
-
 [node name="Bridge_21" type="AnimatableBody2D" parent="." unique_id=90000463]
-position = Vector2(1416, 104)
+position = Vector2(1416.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_21" unique_id=90000464]
 texture = ExtResource("2_yqjtg")
@@ -982,13 +1092,11 @@ region_enabled = true
 region_rect = Rect2(160, 16, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_21" unique_id=90000465]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_21")
 one_way_collision = true
 
-
 [node name="Bridge_22" type="AnimatableBody2D" parent="." unique_id=90000466]
-position = Vector2(1432, 104)
+position = Vector2(1432.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_22" unique_id=90000467]
 texture = ExtResource("2_yqjtg")
@@ -996,13 +1104,11 @@ region_enabled = true
 region_rect = Rect2(160, 16, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_22" unique_id=90000468]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_22")
 one_way_collision = true
 
-
 [node name="Bridge_23" type="AnimatableBody2D" parent="." unique_id=90000469]
-position = Vector2(1448, 104)
+position = Vector2(1448.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_23" unique_id=90000470]
 texture = ExtResource("2_yqjtg")
@@ -1010,13 +1116,11 @@ region_enabled = true
 region_rect = Rect2(160, 16, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_23" unique_id=90000471]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_23")
 one_way_collision = true
 
-
 [node name="Bridge_24" type="AnimatableBody2D" parent="." unique_id=90000472]
-position = Vector2(1464, 104)
+position = Vector2(1464.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_24" unique_id=90000473]
 texture = ExtResource("2_yqjtg")
@@ -1024,13 +1128,11 @@ region_enabled = true
 region_rect = Rect2(160, 16, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_24" unique_id=90000474]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_24")
 one_way_collision = true
 
-
 [node name="Bridge_25" type="AnimatableBody2D" parent="." unique_id=90000475]
-position = Vector2(1480, 104)
+position = Vector2(1480.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_25" unique_id=90000476]
 texture = ExtResource("2_yqjtg")
@@ -1038,13 +1140,11 @@ region_enabled = true
 region_rect = Rect2(160, 16, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_25" unique_id=90000477]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_25")
 one_way_collision = true
 
-
 [node name="Bridge_26" type="AnimatableBody2D" parent="." unique_id=90000478]
-position = Vector2(1496, 104)
+position = Vector2(1496.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_26" unique_id=90000479]
 texture = ExtResource("2_yqjtg")
@@ -1052,13 +1152,11 @@ region_enabled = true
 region_rect = Rect2(160, 16, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_26" unique_id=90000480]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_26")
 one_way_collision = true
 
-
 [node name="Bridge_27" type="AnimatableBody2D" parent="." unique_id=90000481]
-position = Vector2(1512, 104)
+position = Vector2(1512.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_27" unique_id=90000482]
 texture = ExtResource("2_yqjtg")
@@ -1066,13 +1164,11 @@ region_enabled = true
 region_rect = Rect2(160, 16, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_27" unique_id=90000483]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_27")
 one_way_collision = true
 
-
 [node name="Bridge_28" type="AnimatableBody2D" parent="." unique_id=90000484]
-position = Vector2(1528, 104)
+position = Vector2(1528.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_28" unique_id=90000485]
 texture = ExtResource("2_yqjtg")
@@ -1080,13 +1176,11 @@ region_enabled = true
 region_rect = Rect2(160, 16, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_28" unique_id=90000486]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_28")
 one_way_collision = true
 
-
 [node name="Bridge_29" type="AnimatableBody2D" parent="." unique_id=90000487]
-position = Vector2(1544, 104)
+position = Vector2(1544.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_29" unique_id=90000488]
 texture = ExtResource("2_yqjtg")
@@ -1094,13 +1188,11 @@ region_enabled = true
 region_rect = Rect2(160, 16, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_29" unique_id=90000489]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_29")
 one_way_collision = true
 
-
 [node name="Bridge_30" type="AnimatableBody2D" parent="." unique_id=90000490]
-position = Vector2(1560, 104)
+position = Vector2(1560.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_30" unique_id=90000491]
 texture = ExtResource("2_yqjtg")
@@ -1108,13 +1200,11 @@ region_enabled = true
 region_rect = Rect2(160, 16, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_30" unique_id=90000492]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_30")
 one_way_collision = true
 
-
 [node name="Bridge_31" type="AnimatableBody2D" parent="." unique_id=90000493]
-position = Vector2(1576, 104)
+position = Vector2(1576.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_31" unique_id=90000494]
 texture = ExtResource("2_yqjtg")
@@ -1122,13 +1212,11 @@ region_enabled = true
 region_rect = Rect2(160, 16, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_31" unique_id=90000495]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_31")
 one_way_collision = true
 
-
 [node name="Bridge_32" type="AnimatableBody2D" parent="." unique_id=90000496]
-position = Vector2(1592, 104)
+position = Vector2(1592.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_32" unique_id=90000497]
 texture = ExtResource("2_yqjtg")
@@ -1136,13 +1224,11 @@ region_enabled = true
 region_rect = Rect2(160, 16, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_32" unique_id=90000498]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_32")
 one_way_collision = true
 
-
 [node name="Bridge_33" type="AnimatableBody2D" parent="." unique_id=90000499]
-position = Vector2(1608, 104)
+position = Vector2(1608.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_33" unique_id=90000500]
 texture = ExtResource("2_yqjtg")
@@ -1150,13 +1236,11 @@ region_enabled = true
 region_rect = Rect2(160, 16, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_33" unique_id=90000501]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_33")
 one_way_collision = true
 
-
 [node name="Bridge_34" type="AnimatableBody2D" parent="." unique_id=90000502]
-position = Vector2(1624, 104)
+position = Vector2(1624.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_34" unique_id=90000503]
 texture = ExtResource("2_yqjtg")
@@ -1164,13 +1248,11 @@ region_enabled = true
 region_rect = Rect2(160, 16, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_34" unique_id=90000504]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_34")
 one_way_collision = true
 
-
 [node name="Bridge_35" type="AnimatableBody2D" parent="." unique_id=90000505]
-position = Vector2(1640, 104)
+position = Vector2(1640.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_35" unique_id=90000506]
 texture = ExtResource("2_yqjtg")
@@ -1178,13 +1260,11 @@ region_enabled = true
 region_rect = Rect2(160, 16, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_35" unique_id=90000507]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_35")
 one_way_collision = true
 
-
 [node name="Bridge_36" type="AnimatableBody2D" parent="." unique_id=90000508]
-position = Vector2(1656, 104)
+position = Vector2(1656.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_36" unique_id=90000509]
 texture = ExtResource("2_yqjtg")
@@ -1192,13 +1272,11 @@ region_enabled = true
 region_rect = Rect2(160, 16, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_36" unique_id=90000510]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_36")
 one_way_collision = true
 
-
 [node name="Bridge_37" type="AnimatableBody2D" parent="." unique_id=90000511]
-position = Vector2(1672, 104)
+position = Vector2(1672.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_37" unique_id=90000512]
 texture = ExtResource("2_yqjtg")
@@ -1206,13 +1284,11 @@ region_enabled = true
 region_rect = Rect2(160, 16, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_37" unique_id=90000513]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_37")
 one_way_collision = true
 
-
 [node name="Bridge_38" type="AnimatableBody2D" parent="." unique_id=90000514]
-position = Vector2(1688, 104)
+position = Vector2(1688.0, 104.0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bridge_38" unique_id=90000515]
 texture = ExtResource("2_yqjtg")
@@ -1220,7 +1296,6 @@ region_enabled = true
 region_rect = Rect2(176, 16, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge_38" unique_id=90000516]
-position = Vector2(0, -5)
-shape = SubResource("RectangleShape2D_bridge")
+shape = SubResource("ConvexPolygonShape2D_bridge_38")
 one_way_collision = true
 

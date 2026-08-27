@@ -11,8 +11,8 @@ const ATTACK_COOLDOWN = 0.4
 @onready var attack_area: Area2D = $AttackArea
 @onready var attack_visual: Polygon2D = $AttackArea/AttackVisual
 @onready var attack_timer: Timer = $AttackTimer
-@onready var drop_ray: RayCast2D = $DropRay
 @onready var drop_timer: Timer = $DropTimer
+@onready var drop_rays = [$DropRay, $DropRayLeft, $DropRayRight]
 @onready var camera = get_node_or_null("Camera2D")
 
 var has_double_jump := false
@@ -34,7 +34,7 @@ var attack_boost_time := 0.0
 var facing := 1
 var base_attack_visual_scale := Vector2.ONE
 var base_attack_visual_rotation := 0.0
-var drop_platform = null
+var drop_platforms = []
 
 
 func _ready() -> void:
@@ -114,11 +114,14 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("attack") and has_attack and attack_cooldown_time <= 0.0:
 		_do_attack()
 
-	if Input.is_action_just_pressed("move_down") and drop_ray.is_colliding():
-		var collider := drop_ray.get_collider()
-		if collider is AnimatableBody2D:
-			drop_platform = collider
-			drop_platform.collision_layer = 0
+	if Input.is_action_just_pressed("move_down"):
+		for ray in drop_rays:
+			if ray.is_colliding():
+				var collider := ray.get_collider()
+				if collider is AnimatableBody2D and collider not in drop_platforms:
+					drop_platforms.append(collider)
+					collider.collision_layer = 0
+		if drop_platforms.size() > 0:
 			drop_timer.start()
 
 	# Play animations
@@ -219,9 +222,9 @@ func _on_attack_area_area_entered(area: Area2D) -> void:
 
 
 func _on_drop_timer_timeout() -> void:
-	if drop_platform:
-		drop_platform.collision_layer = 1
-		drop_platform = null
+	for platform in drop_platforms:
+		platform.collision_layer = 1
+	drop_platforms.clear()
 
 
 func _shake_camera(strength: float, duration: float) -> void:
