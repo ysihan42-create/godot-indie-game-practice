@@ -7,6 +7,7 @@ const ATTACK_DURATION = 0.16
 const ATTACK_COOLDOWN = 0.4
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
+@onready var collision_shape: CollisionShape2D = $CollisionShape2D
 @onready var attack_area: Area2D = $AttackArea
 @onready var attack_visual: Polygon2D = $AttackArea/AttackVisual
 @onready var attack_timer: Timer = $AttackTimer
@@ -19,6 +20,7 @@ var invincible_time := 0.0
 var big_time := 0.0
 var attack_cooldown_time := 0.0
 var base_sprite_scale := Vector2.ONE
+var base_collision_scale := Vector2.ONE
 var is_big := false
 var speed_multiplier := 1.0
 var jump_multiplier := 1.0
@@ -32,6 +34,7 @@ var facing := 1
 func _ready() -> void:
 	add_to_group("player")
 	base_sprite_scale = animated_sprite.scale
+	base_collision_scale = collision_shape.scale
 	attack_area.monitoring = false
 	attack_visual.visible = false
 	attack_timer.timeout.connect(_on_attack_timer_timeout)
@@ -163,8 +166,10 @@ func _set_big(enabled: bool) -> void:
 	is_big = enabled
 	if enabled:
 		animated_sprite.scale = Vector2(1.6, 1.6)
+		collision_shape.scale = Vector2(1.6, 1.6)
 	else:
 		animated_sprite.scale = base_sprite_scale
+		collision_shape.scale = base_collision_scale
 
 
 func _do_attack() -> void:
