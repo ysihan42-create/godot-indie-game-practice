@@ -96,6 +96,7 @@ func apply_potion(potion_type: int) -> void:
 	match potion_type:
 		0:
 			has_double_jump = true
+			jumps_left = 1
 		1:
 			set_invincible(6.0)
 		2:
