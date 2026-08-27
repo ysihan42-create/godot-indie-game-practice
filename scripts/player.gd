@@ -19,6 +19,7 @@ var invincible_time := 0.0
 var big_time := 0.0
 var attack_cooldown_time := 0.0
 var base_sprite_scale := Vector2.ONE
+var is_big := false
 var speed_multiplier := 1.0
 var jump_multiplier := 1.0
 var attack_multiplier := 1.0
@@ -94,7 +95,8 @@ func _physics_process(delta: float) -> void:
 	elif direction < 0:
 		animated_sprite.flip_h = true
 		facing = -1
-	attack_area.scale = Vector2(facing * attack_multiplier, attack_multiplier)
+	var size_factor := 1.6 if is_big else 1.0
+	attack_area.scale = Vector2(facing * attack_multiplier * size_factor, attack_multiplier * size_factor)
 
 	# Attack.
 	if Input.is_action_just_pressed("attack") and has_attack and attack_cooldown_time <= 0.0:
@@ -158,6 +160,7 @@ func is_invincible_now() -> bool:
 
 
 func _set_big(enabled: bool) -> void:
+	is_big = enabled
 	if enabled:
 		animated_sprite.scale = Vector2(1.6, 1.6)
 	else:
