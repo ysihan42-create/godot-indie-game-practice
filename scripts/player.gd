@@ -133,6 +133,7 @@ func apply_potion(potion_type: int) -> void:
 
 
 func apply_fruit_ability(fruit_color: int) -> void:
+	# fruit_color: 0=绿色，1=橘色，2=粉色，3=红色
 	match fruit_color:
 		0:
 			jump_multiplier = 1.45

@@ -1,6 +1,9 @@
 extends Area2D
 
 
+# fruit.png 布局：
+# 列 0=苹果，1=梨，2=葡萄；行 0=绿色，1=橘色，2=粉色，3=红色。
+# fruit_type 0-2 绿，3-5 橘，6-8 粉，9-11 红。
 @export var fruit_type := 0
 @onready var sprite: Sprite2D = $Sprite2D
 
