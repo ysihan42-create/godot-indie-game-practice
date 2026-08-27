@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bwgm8nk20nuhg"]
+
+[ext_resource type="Script" uid="uid://fruitgdscr777" path="res://scripts/fruit.gd" id="1_fruit"]
+[ext_resource type="Texture2D" uid="uid://b6ffr11p8n2k" path="res://assets/sprites/fruit.png" id="2_fruittex"]
+[ext_resource type="AudioStream" uid="uid://cd3if61gp53ay" path="res://assets/sounds/power_up.wav" id="3_powerup"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fruit"]
+radius = 6.0
+
+[node name="FruitItem" type="Area2D"]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_fruit")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_fruittex")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_fruit")
+
+[node name="PickupSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_powerup")
+bus = &"SFX"

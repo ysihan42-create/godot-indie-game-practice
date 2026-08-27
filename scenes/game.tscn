@@ -9,6 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://btvetxn3a0nfn" path="res://scenes/killzone.tscn" id="5_iywne"]
 [ext_resource type="PackedScene" uid="uid://60srmp8f1guv" path="res://scenes/slime.tscn" id="6_p57ef"]
 [ext_resource type="FontFile" uid="uid://jgv88f60q8tg" path="res://assets/fonts/PixelOperator8.ttf" id="8_0tnpc"]
+[ext_resource type="PackedScene" uid="uid://potionbottle7" path="res://scenes/potion.tscn" id="7_potion"]
+[ext_resource type="PackedScene" uid="uid://fruitpickup77" path="res://scenes/fruit_item.tscn" id="9_fruit"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("2_yqjtg")
@@ -605,3 +607,29 @@ position = Vector2(1600, -48)
 
 [node name="Coin18" parent="Coins" unique_id=90000011 instance=ExtResource("4_lbhrr")]
 position = Vector2(1600, -64)
+
+[node name="Pickups" type="Node" parent="." unique_id=90000020]
+
+[node name="GreenPotion" parent="Pickups" unique_id=90000021 instance=ExtResource("7_potion")]
+position = Vector2(170, 52)
+
+[node name="YellowPotion" parent="Pickups" unique_id=90000022 instance=ExtResource("7_potion")]
+position = Vector2(560, 76)
+potion_type = 1
+
+[node name="BluePotion" parent="Pickups" unique_id=90000023 instance=ExtResource("7_potion")]
+position = Vector2(800, -30)
+potion_type = 2
+
+[node name="PurplePotion" parent="Pickups" unique_id=90000024 instance=ExtResource("7_potion")]
+position = Vector2(850, 88)
+potion_type = 3
+
+[node name="Fruit" parent="Pickups" unique_id=90000025 instance=ExtResource("9_fruit")]
+position = Vector2(330, 60)
+
+[node name="Fruit2" parent="Pickups" unique_id=90000026 instance=ExtResource("9_fruit")]
+position = Vector2(700, 70)
+
+[node name="Fruit3" parent="Pickups" unique_id=90000027 instance=ExtResource("9_fruit")]
+position = Vector2(1300, -20)

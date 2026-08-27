@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://d3lvwhjw47x4w"]
+
+[ext_resource type="Script" uid="uid://potionbuffg77" path="res://scripts/potion.gd" id="1_potion"]
+[ext_resource type="Texture2D" uid="uid://dtdncmd6dus80" path="res://assets/sprites/world_tileset.png" id="2_world"]
+[ext_resource type="AudioStream" uid="uid://cd3if61gp53ay" path="res://assets/sounds/power_up.wav" id="3_powerup"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_potion"]
+radius = 6.0
+
+[node name="Potion" type="Area2D"]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_potion")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_world")
+region_enabled = true
+region_rect = Rect2(0, 112, 16, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_potion")
+
+[node name="PickupSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_powerup")
+bus = &"SFX"

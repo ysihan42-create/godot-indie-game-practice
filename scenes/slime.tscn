@@ -66,3 +66,11 @@ target_position = Vector2(9, 0)
 [node name="RayCastLeft" type="RayCast2D" parent="." unique_id=787164714]
 position = Vector2(0, -6)
 target_position = Vector2(-10, 0)
+
+[node name="Hurtbox" type="Area2D" parent="." unique_id=90000200]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox" unique_id=90000201]
+position = Vector2(0, -6)
+shape = SubResource("RectangleShape2D_al4r6")
