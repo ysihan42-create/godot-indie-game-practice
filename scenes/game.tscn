@@ -461,7 +461,7 @@ position = Vector2(66, 40)
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=717850343]
 position = Vector2(0, -8)
 zoom = Vector2(4, 4)
-limit_bottom = 125
+limit_bottom = 150
 limit_smoothed = true
 position_smoothing_enabled = true
 
@@ -611,7 +611,7 @@ text = "You made it！"
 [node name="Pickups" type="Node" parent="." unique_id=90000020]
 
 [node name="GreenPotion" parent="Pickups" unique_id=90000021 instance=ExtResource("7_potion")]
-position = Vector2(176, 50)
+position = Vector2(174, 61)
 
 [node name="YellowPotion" parent="Pickups" unique_id=90000022 instance=ExtResource("7_potion")]
 position = Vector2(600, 72)
@@ -637,5 +637,35 @@ position = Vector2(700, 70)
 fruit_type = 4
 
 [node name="RedApple" parent="Pickups" unique_id=90000029 instance=ExtResource("9_fruit")]
-position = Vector2(1500, -20)
+position = Vector2(135, 64)
 fruit_type = 9
+
+[node name="DeathOverlay" type="CanvasLayer" parent="." unique_id=90000300]
+layer = 10
+
+[node name="DeathScreen" type="Control" parent="DeathOverlay" unique_id=90000301]
+unique_name_in_owner = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="DeathOverlay/DeathScreen" unique_id=90000302]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(1, 0, 0, 0.55)
+
+[node name="Label" type="Label" parent="DeathOverlay/DeathScreen" unique_id=90000303]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -60.0
+offset_right = 250.0
+offset_bottom = 60.0
+theme_override_fonts/font = ExtResource("2_0tnpc")
+theme_override_font_sizes/font_size = 40
+text = "You die"
+horizontal_alignment = 1
+vertical_alignment = 1
