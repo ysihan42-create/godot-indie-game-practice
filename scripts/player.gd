@@ -117,7 +117,7 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("move_down"):
 		for ray in drop_rays:
 			if ray.is_colliding():
-				var collider := ray.get_collider()
+				var collider = ray.get_collider()
 				if collider is AnimatableBody2D and collider not in drop_platforms:
 					drop_platforms.append(collider)
 					collider.collision_layer = 0
