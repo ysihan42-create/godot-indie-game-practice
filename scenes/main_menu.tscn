@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://mainmenuscen7"]
+[gd_scene format=3 uid="uid://oa1t7v33prew"]
 
 [ext_resource type="Script" uid="uid://mainmenugd777" path="res://scripts/main_menu.gd" id="1_menu"]
 [ext_resource type="FontFile" uid="uid://cuhjqidghnmi2" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="2_bold"]
