@@ -19,6 +19,13 @@ var invincible_time := 0.0
 var big_time := 0.0
 var attack_cooldown_time := 0.0
 var base_sprite_scale := Vector2.ONE
+var speed_multiplier := 1.0
+var jump_multiplier := 1.0
+var attack_multiplier := 1.0
+var speed_boost_time := 0.0
+var jump_boost_time := 0.0
+var attack_boost_time := 0.0
+var facing := 1
 
 
 func _ready() -> void:
@@ -43,6 +50,24 @@ func _physics_process(delta: float) -> void:
 			big_time = 0.0
 			_set_big(false)
 
+	if speed_boost_time > 0.0:
+		speed_boost_time -= delta
+		if speed_boost_time <= 0.0:
+			speed_boost_time = 0.0
+			speed_multiplier = 1.0
+
+	if jump_boost_time > 0.0:
+		jump_boost_time -= delta
+		if jump_boost_time <= 0.0:
+			jump_boost_time = 0.0
+			jump_multiplier = 1.0
+
+	if attack_boost_time > 0.0:
+		attack_boost_time -= delta
+		if attack_boost_time <= 0.0:
+			attack_boost_time = 0.0
+			attack_multiplier = 1.0
+
 	attack_cooldown_time = maxf(0.0, attack_cooldown_time - delta)
 
 	# Add the gravity.
@@ -54,9 +79,9 @@ func _physics_process(delta: float) -> void:
 	# Handle jump and double jump.
 	if Input.is_action_just_pressed("jump"):
 		if is_on_floor():
-			velocity.y = JUMP_VELOCITY
+			velocity.y = JUMP_VELOCITY * jump_multiplier
 		elif has_double_jump and jumps_left > 0:
-			velocity.y = JUMP_VELOCITY * 0.92
+			velocity.y = JUMP_VELOCITY * 0.92 * jump_multiplier
 			jumps_left -= 1
 
 	# Get the input direction: -1, 0, 1
@@ -65,10 +90,11 @@ func _physics_process(delta: float) -> void:
 	# Flip the Sprite and attack hitbox.
 	if direction > 0:
 		animated_sprite.flip_h = false
-		attack_area.scale.x = 1.0
+		facing = 1
 	elif direction < 0:
 		animated_sprite.flip_h = true
-		attack_area.scale.x = -1.0
+		facing = -1
+	attack_area.scale = Vector2(facing * attack_multiplier, attack_multiplier)
 
 	# Attack.
 	if Input.is_action_just_pressed("attack") and has_attack and attack_cooldown_time <= 0.0:
@@ -85,9 +111,9 @@ func _physics_process(delta: float) -> void:
 
 	# Apply movement
 	if direction:
-		velocity.x = direction * SPEED
+		velocity.x = direction * SPEED * speed_multiplier
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
+		velocity.x = move_toward(velocity.x, 0, SPEED * speed_multiplier)
 
 	move_and_slide()
 
@@ -104,6 +130,21 @@ func apply_potion(potion_type: int) -> void:
 			big_time = 8.0
 		3:
 			has_attack = true
+
+
+func apply_fruit_ability(fruit_color: int) -> void:
+	match fruit_color:
+		0:
+			jump_multiplier = 1.45
+			jump_boost_time = 5.0
+		1:
+			set_invincible(3.0)
+		2:
+			speed_multiplier = 1.55
+			speed_boost_time = 5.0
+		3:
+			attack_multiplier = 1.6
+			attack_boost_time = 5.0
 
 
 func set_invincible(duration: float) -> void:

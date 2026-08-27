@@ -2,7 +2,6 @@ extends Area2D
 
 
 @export var fruit_type := 0
-@onready var game_manager: Node = %GameManager
 @onready var sprite: Sprite2D = $Sprite2D
 
 
@@ -14,7 +13,7 @@ func _ready() -> void:
 
 
 func _on_body_entered(body: Node2D) -> void:
-	if body.is_in_group("player"):
-		game_manager.add_point(5)
+	if body.has_method("apply_fruit_ability"):
+		body.apply_fruit_ability(int(fruit_type / 3.0))
 		$PickupSound.play()
 		queue_free()

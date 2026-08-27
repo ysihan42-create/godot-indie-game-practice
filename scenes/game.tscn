@@ -625,14 +625,17 @@ potion_type = 2
 position = Vector2(856, 72)
 potion_type = 3
 
-[node name="Fruit" parent="Pickups" unique_id=90000025 instance=ExtResource("9_fruit")]
+[node name="GreenApple" parent="Pickups" unique_id=90000025 instance=ExtResource("9_fruit")]
 position = Vector2(330, 60)
-fruit_type = 0
 
-[node name="Fruit2" parent="Pickups" unique_id=90000026 instance=ExtResource("9_fruit")]
+[node name="GreenApple2" parent="Pickups" unique_id=90000027 instance=ExtResource("9_fruit")]
+position = Vector2(1300, -20)
+fruit_type = 8
+
+[node name="GreenApple3" parent="Pickups" unique_id=90000026 instance=ExtResource("9_fruit")]
 position = Vector2(700, 70)
 fruit_type = 4
 
-[node name="Fruit3" parent="Pickups" unique_id=90000027 instance=ExtResource("9_fruit")]
-position = Vector2(1300, -20)
-fruit_type = 8
+[node name="RedApple" parent="Pickups" unique_id=90000029 instance=ExtResource("9_fruit")]
+position = Vector2(1500, -20)
+fruit_type = 9
