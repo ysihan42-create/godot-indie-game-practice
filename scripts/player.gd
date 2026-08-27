@@ -11,6 +11,7 @@ const ATTACK_COOLDOWN = 0.4
 @onready var attack_area: Area2D = $AttackArea
 @onready var attack_visual: Polygon2D = $AttackArea/AttackVisual
 @onready var attack_timer: Timer = $AttackTimer
+@onready var camera = get_node_or_null("Camera2D")
 
 var has_double_jump := false
 var jumps_left := 0
@@ -29,12 +30,16 @@ var speed_boost_time := 0.0
 var jump_boost_time := 0.0
 var attack_boost_time := 0.0
 var facing := 1
+var base_attack_visual_scale := Vector2.ONE
+var base_attack_visual_rotation := 0.0
 
 
 func _ready() -> void:
 	add_to_group("player")
 	base_sprite_scale = animated_sprite.scale
 	base_collision_scale = collision_shape.scale
+	base_attack_visual_scale = attack_visual.scale
+	base_attack_visual_rotation = attack_visual.rotation
 	attack_area.monitoring = false
 	attack_visual.visible = false
 	attack_timer.timeout.connect(_on_attack_timer_timeout)
@@ -176,14 +181,36 @@ func _do_attack() -> void:
 	attack_cooldown_time = ATTACK_COOLDOWN
 	attack_area.monitoring = true
 	attack_visual.visible = true
+	attack_visual.modulate = Color(1, 1, 1, 0.95)
+	attack_visual.scale = base_attack_visual_scale * 0.6
+	attack_visual.rotation = base_attack_visual_rotation - 0.28 * facing
+	var tween := create_tween()
+	tween.set_parallel(true)
+	tween.tween_property(attack_visual, "scale", base_attack_visual_scale * 1.25, ATTACK_DURATION).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
+	tween.tween_property(attack_visual, "rotation", base_attack_visual_rotation + 0.38 * facing, ATTACK_DURATION).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
+	tween.tween_property(attack_visual, "modulate:a", 0.0, ATTACK_DURATION)
 	attack_timer.start()
+	_shake_camera(2.0, 0.08)
 
 
 func _on_attack_timer_timeout() -> void:
 	attack_area.monitoring = false
 	attack_visual.visible = false
+	attack_visual.modulate = Color(1, 1, 1, 0.95)
+	attack_visual.scale = base_attack_visual_scale
+	attack_visual.rotation = base_attack_visual_rotation
 
 
 func _on_attack_area_area_entered(area: Area2D) -> void:
 	if area.is_in_group("enemy_hurtbox") and area.get_parent().has_method("hit"):
+		_shake_camera(4.0, 0.12)
 		area.get_parent().hit()
+
+
+func _shake_camera(strength: float, duration: float) -> void:
+	if camera == null:
+		return
+	var tween := create_tween()
+	tween.tween_property(camera, "offset", Vector2(strength, 0), duration * 0.25).set_trans(Tween.TRANS_SINE)
+	tween.tween_property(camera, "offset", Vector2(-strength, 0), duration * 0.25).set_trans(Tween.TRANS_SINE)
+	tween.tween_property(camera, "offset", Vector2.ZERO, duration * 0.5).set_trans(Tween.TRANS_SINE)
